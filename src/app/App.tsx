@@ -1,5 +1,6 @@
 import { Header } from "../features/header/Header";
 import { HeroSection } from "../features/hero/HeroSection";
+import { TrustSection } from "../features/trust/TrustSection";
 
 export function App() {
   return (
@@ -8,6 +9,8 @@ export function App() {
 
       <main id="main-content">
         <HeroSection />
+
+        <TrustSection />
       </main>
     </>
   );
