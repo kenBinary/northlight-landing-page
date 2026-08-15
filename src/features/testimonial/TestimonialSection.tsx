@@ -1,4 +1,5 @@
 import styles from "./Testimonial.module.css";
+import mayaEllisonAvatar from "../../assets/images/maya-ellison.svg";
 
 export function TestimonialSection() {
   return (
@@ -13,7 +14,7 @@ export function TestimonialSection() {
 
           <footer className={styles["attribution"]}>
             <img
-              src="/src/assets/images/maya-ellison.svg"
+              src={mayaEllisonAvatar}
               alt="Maya Ellison"
               className={styles["avatar"]}
               loading="lazy"

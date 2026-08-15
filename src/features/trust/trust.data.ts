@@ -1,3 +1,9 @@
+import vertexLabs from "../../assets/logos/vertex-labs.svg";
+import halcyon from "../../assets/logos/halcyon.svg";
+import ridgeway from "../../assets/logos/ridgeway.svg";
+import formation from "../../assets/logos/formation.svg";
+import copperline from "../../assets/logos/copperline.svg";
+
 export interface TrustLogo {
   id: string;
   name: string;
@@ -8,26 +14,26 @@ export const TRUST_LOGOS: TrustLogo[] = [
   {
     id: "vertex-labs",
     name: "Vertex Labs",
-    src: "/src/assets/logos/vertex-labs.svg",
+    src: vertexLabs,
   },
   {
     id: "halcyon",
     name: "Halcyon",
-    src: "/src/assets/logos/halcyon.svg",
+    src: halcyon,
   },
   {
     id: "ridgeway",
     name: "Ridgeway",
-    src: "/src/assets/logos/ridgeway.svg",
+    src: ridgeway,
   },
   {
     id: "formation",
     name: "Formation",
-    src: "/src/assets/logos/formation.svg",
+    src: formation,
   },
   {
     id: "copperline",
     name: "Copperline",
-    src: "/src/assets/logos/copperline.svg",
+    src: copperline,
   },
 ];

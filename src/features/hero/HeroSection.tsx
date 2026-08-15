@@ -1,5 +1,6 @@
 import { Button } from "../../components/Button/Button";
 import { ArrowRightIcon } from "../../components/Icons/ArrowRight";
+import heroDashboard from "../../assets/images/hero-dashboard.svg";
 import styles from "./Hero.module.css";
 
 export function HeroSection() {
@@ -36,7 +37,7 @@ export function HeroSection() {
 
         <div className={styles["imageWrapper"]} aria-hidden="true">
           <img
-            src="/src/assets/images/hero-dashboard.svg"
+            src={heroDashboard}
             alt="Northlight dashboard showing active users, conversion rate and weekly session trends"
             className={styles["dashboardImage"]}
             width="560"
