@@ -1,0 +1,127 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-h);
+  background-color: rgba(255, 255, 255, 0.82);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  box-shadow: none;
+  transition:
+    border-color var(--t-base),
+    box-shadow var(--t-base);
+}
+
+.header.scrolled {
+  border-bottom-color: var(--c-line);
+  box-shadow: var(--sh-sm);
+}
+
+.inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: var(--space-4); */
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.desktopNav,
+.desktopActions {
+  display: none;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.navLink {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--c-ink-2);
+  transition: color var(--t-fast);
+}
+
+.navLink:hover {
+  color: var(--c-ink);
+}
+
+.signInLink {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--c-ink-2);
+  transition: color var(--t-fast);
+}
+
+.signInLink:hover {
+  color: var(--c-ink);
+}
+
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-accent);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: var(--r-md);
+  box-shadow: var(--sh-sm);
+  transition:
+    background-color var(--t-base),
+    transform var(--t-fast);
+}
+
+.ctaBtn:hover {
+  background-color: var(--c-accent-hover);
+}
+
+.ctaBtn:active {
+  transform: translateY(1px);
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--r-sm);
+  color: var(--c-ink);
+  transition:
+    background-color var(--t-fast),
+    color var(--t-fast);
+}
+
+.hamburger:hover {
+  background-color: var(--c-ground);
+}
+
+@media (min-width: 900px) {
+  .desktopNav,
+  .desktopActions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+  }
+
+  .desktopActions {
+    gap: var(--space-4);
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
