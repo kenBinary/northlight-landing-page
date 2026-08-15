@@ -49,7 +49,7 @@ export function Header() {
             <a href="/" aria-label="Northlight home">
               <Logo />
             </a>
-            <h3>Northflight</h3>
+            <h3>Northlight</h3>
           </div>
 
           <nav className={styles["desktopNav"]} aria-label="Main navigation">
