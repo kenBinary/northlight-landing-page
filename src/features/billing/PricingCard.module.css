@@ -1,0 +1,96 @@
+.card {
+  background-color: var(--c-surface);
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-lg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  position: relative;
+  box-shadow: var(--sh-sm);
+  transition:
+    border-color var(--t-base),
+    box-shadow var(--t-base);
+}
+
+.cardFeatured {
+  border-color: var(--c-accent);
+  box-shadow: var(--sh-lg);
+}
+
+.popularBadge {
+  position: absolute;
+  top: -14px;
+  left: 32px;
+  background-color: var(--c-accent);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 4px 14px;
+  border-radius: var(--r-pill);
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.planName {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--c-ink);
+}
+
+.planDescription {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--c-ink-3);
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-1);
+}
+
+.priceAmount {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--c-ink);
+}
+
+.pricePer {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--c-ink-3);
+}
+
+.billedAnnually {
+  font-size: 13px;
+  color: var(--c-ink-3);
+  margin-top: calc(var(--space-4) * -1);
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--c-ink-2);
+}

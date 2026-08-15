@@ -1,0 +1,68 @@
+.switchWrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.switchLabel {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--c-ink-3);
+  transition: color var(--t-base);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.switchLabelActive {
+  color: var(--c-ink);
+  font-weight: 600;
+}
+
+.switchTrack {
+  position: relative;
+  width: 52px;
+  height: 30px;
+  border-radius: var(--r-pill);
+  background-color: var(--c-line);
+  flex-shrink: 0;
+  transition: background-color var(--t-base);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.switchTrack[aria-checked="true"] {
+  background-color: var(--c-accent);
+}
+
+.switchThumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(10, 16, 36, 0.2);
+  transform: translateX(0);
+  transition: transform var(--t-base);
+}
+
+.switchThumbOn {
+  transform: translateX(22px);
+}
+
+.saveBadge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--c-coral-ink);
+  background-color: var(--c-coral-soft);
+  border-radius: var(--r-pill);
+  padding: 2px 8px;
+}
