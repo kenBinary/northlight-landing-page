@@ -1,0 +1,55 @@
+.trust {
+  background-color: var(--c-ground);
+  padding-top: var(--space-10);
+  padding-bottom: var(--space-10);
+  border-top: 1px solid var(--c-line-soft);
+  border-bottom: 1px solid var(--c-line-soft);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c-ink-3);
+  text-align: center;
+}
+
+.logoList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8) var(--space-10);
+}
+
+.logoItem {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  height: 24px;
+  width: auto;
+  opacity: 0.75;
+  object-fit: contain;
+  transition: opacity var(--t-base);
+}
+
+.logoImg:hover {
+  opacity: 1;
+}
+
+@media (min-width: 640px) {
+  .logoImg {
+    height: 30px;
+  }
+}
