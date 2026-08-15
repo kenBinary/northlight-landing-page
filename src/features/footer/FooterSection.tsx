@@ -41,18 +41,14 @@ export function FooterSection() {
         </div>
       </div>
 
-      <div className={styles["bottomBar"]}>
-        <div className={`container ${styles["bottomInner"]}`}>
-          <p className={styles["copyright"]}>© 2026 Northlight Labs, Inc.</p>
-          <div
-            className={styles["statusIndicator"]}
-            aria-label="System status: operational"
-          >
-            <span className={styles["statusDot"]} aria-hidden="true" />
-            <span className={styles["statusText"]}>
-              All systems operational
-            </span>
-          </div>
+      <div className={`container ${styles["bottomInner"]}`}>
+        <p className={styles["copyright"]}>© 2026 Northlight Labs, Inc.</p>
+        <div
+          className={styles["statusIndicator"]}
+          aria-label="System status: operational"
+        >
+          <span className={styles["statusDot"]} aria-hidden="true" />
+          <span className={styles["statusText"]}>All systems operational</span>
         </div>
       </div>
     </footer>

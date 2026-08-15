@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-6);
-  max-width: 680px;
+  max-width: 840px;
   width: 100%;
 
   > blockquote {
@@ -24,12 +24,6 @@
     letter-spacing: -0.02em;
     text-align: center;
     color: var(--c-ink);
-  }
-}
-
-@media (min-width: 640px) {
-  .card {
-    padding: 48px;
   }
 }
 
