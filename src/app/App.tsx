@@ -5,6 +5,7 @@ import { HeroSection } from "../features/hero/HeroSection";
 import { HowItWorksSection } from "../features/steps/HowItWorksSection";
 import { TestimonialSection } from "../features/testimonial/TestimonialSection";
 import { TrustSection } from "../features/trust/TrustSection";
+import { FaqSection } from "../features/faq/FaqSection";
 
 export function App() {
   return (
@@ -23,6 +24,8 @@ export function App() {
         <PricingSection />
 
         <TestimonialSection />
+
+        <FaqSection />
       </main>
     </>
   );
