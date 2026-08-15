@@ -39,10 +39,15 @@
   margin-right: auto;
 }
 
+.plansGrid > li {
+  display: flex;
+  flex: 1;
+}
+
 @media (min-width: 1024px) {
   .plansGrid {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
     max-width: none;
   }
 }
