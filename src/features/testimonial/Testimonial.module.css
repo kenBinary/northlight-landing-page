@@ -1,0 +1,67 @@
+.section {
+  background-color: var(--c-ground);
+  padding-top: var(--section-pad-y);
+  padding-bottom: var(--section-pad-y);
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 680px;
+  width: 100%;
+
+  > blockquote {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.4;
+    color: var(--c-ink);
+  }
+}
+
+@media (min-width: 640px) {
+  .card {
+    padding: 48px;
+  }
+}
+
+.attribution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.attributionText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.authorName {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--c-ink);
+  font-style: normal;
+}
+
+.authorRole {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--c-ink-3);
+}
