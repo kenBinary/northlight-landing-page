@@ -43,6 +43,7 @@ export function HeroSection() {
             width="560"
             height="390"
             loading="eager"
+            fetchPriority="high"
           />
         </div>
       </div>
