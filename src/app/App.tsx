@@ -7,6 +7,7 @@ import { TestimonialSection } from "../features/testimonial/TestimonialSection";
 import { TrustSection } from "../features/trust/TrustSection";
 import { FaqSection } from "../features/faq/FaqSection";
 import { CtaSection } from "../features/cta/CtaSection";
+import { FooterSection } from "../features/footer/FooterSection";
 
 export function App() {
   return (
@@ -29,6 +30,8 @@ export function App() {
         <FaqSection />
 
         <CtaSection />
+
+        <FooterSection />
       </main>
     </>
   );
