@@ -6,6 +6,7 @@ import { HowItWorksSection } from "../features/steps/HowItWorksSection";
 import { TestimonialSection } from "../features/testimonial/TestimonialSection";
 import { TrustSection } from "../features/trust/TrustSection";
 import { FaqSection } from "../features/faq/FaqSection";
+import { CtaSection } from "../features/cta/CtaSection";
 
 export function App() {
   return (
@@ -26,6 +27,8 @@ export function App() {
         <TestimonialSection />
 
         <FaqSection />
+
+        <CtaSection />
       </main>
     </>
   );
