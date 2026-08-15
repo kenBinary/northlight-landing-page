@@ -93,48 +93,4 @@
     gap: var(--space-3);
     margin-top: var(--space-8);
   }
-
-  .drawerSignIn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-family: var(--font-body);
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--c-ink);
-    padding: 14px 24px;
-    border-radius: var(--r-md);
-    border: 1px solid var(--c-line);
-    background-color: var(--c-surface);
-    box-shadow: var(--sh-sm);
-    transition:
-      border-color var(--t-base),
-      background-color var(--t-base);
-
-    &:hover {
-      border-color: var(--c-ink-3);
-      background-color: var(--c-ground);
-    }
-  }
-
-  .drawerGetStarted {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-family: var(--font-body);
-    font-size: 16px;
-    font-weight: 500;
-    color: #ffffff;
-    padding: 14px 24px;
-    border-radius: var(--r-md);
-    background-color: var(--c-accent);
-    box-shadow: var(--sh-sm);
-    transition: background-color var(--t-base);
-
-    &:hover {
-      background-color: var(--c-accent-hover);
-    }
-  }
 }

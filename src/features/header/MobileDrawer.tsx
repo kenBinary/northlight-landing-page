@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import styles from "./MobileDrawer.module.css";
 import { CloseIcon } from "../../components/Icons/Close";
 import { Logo } from "../../components/Logo/Logo";
+import { Button } from "../../components/Button/Button";
 
 interface NavLink {
   label: string;
@@ -85,20 +86,12 @@ export function MobileDrawer({ isOpen, onClose, navLinks }: MobileDrawerProps) {
         </div>
 
         <div className={styles["drawerActions"]}>
-          <a
-            href="#sign-in"
-            className={styles["drawerSignIn"]}
-            onClick={onClose}
-          >
+          <Button onClick={onClose} variant="secondary" size="base">
             Sign in
-          </a>
-          <a
-            href="#start-free-trial"
-            className={styles["drawerGetStarted"]}
-            onClick={onClose}
-          >
-            Start free trial
-          </a>
+          </Button>
+          <Button onClick={onClose} variant="primary" size="base">
+            Start Free Trial
+          </Button>
         </div>
       </div>
     </div>

@@ -1,0 +1,108 @@
+.hero {
+  background-color: var(--c-surface);
+  background-image: var(--grad-hero-wash);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: calc(var(--section-pad-y) * 0.75);
+  padding-bottom: var(--section-pad-y);
+  overflow: hidden;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-6);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background-color: var(--c-surface);
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-pill);
+  padding: 6px 14px 6px 6px;
+  box-shadow: var(--sh-sm);
+  transition:
+    box-shadow var(--t-base),
+    border-color var(--t-base);
+}
+
+.pill:hover {
+  box-shadow: var(--sh-md);
+  border-color: var(--c-accent-soft);
+}
+
+.pillBadge {
+  background-color: var(--c-accent);
+  border-radius: var(--r-pill);
+  padding: 4px;
+  line-height: 1.5;
+}
+
+.pillText {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--c-ink-2);
+}
+
+.headline {
+  & span:first-of-type {
+    display: block;
+    max-width: 10ch;
+    margin: 0 auto;
+  }
+
+  & span:nth-of-type(2) {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+
+.subhead {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--c-ink-2);
+  max-width: 36ch;
+  margin: 0 auto;
+}
+
+.ctaGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  width: 100%;
+}
+
+.metaLine {
+  font-size: 13px;
+  color: var(--c-ink-3);
+}
+
+.imageWrapper {
+  width: 100%;
+  margin-top: var(--space-4);
+}
+
+.dashboardImage {
+  width: 100%;
+  height: auto;
+  border-radius: var(--r-lg);
+  filter: drop-shadow(0 24px 48px rgba(10, 16, 36, 0.12));
+}
+
+@media (min-width: 900px) {
+  .ctaGroup {
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    width: auto;
+  }
+}
