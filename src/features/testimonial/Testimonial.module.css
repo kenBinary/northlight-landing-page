@@ -18,9 +18,11 @@
 
   > blockquote {
     font-family: var(--font-heading);
+    font-size: clamp(20px, 14.4px + 1.4vw, 28px);
     font-weight: 500;
+    line-height: 1.42;
+    letter-spacing: -0.02em;
     text-align: center;
-    line-height: 1.4;
     color: var(--c-ink);
   }
 }
