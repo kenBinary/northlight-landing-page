@@ -1,10 +1,11 @@
-function App() {
+import { Header } from "../features/header/Header";
 
+export function App() {
   return (
     <>
-     hello world
+      <Header />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
