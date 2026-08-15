@@ -1,3 +1,4 @@
+import { PricingSection } from "../features/billing/PricingSection";
 import { FeaturesSection } from "../features/features-grid/FeaturesSection";
 import { Header } from "../features/header/Header";
 import { HeroSection } from "../features/hero/HeroSection";
@@ -17,6 +18,8 @@ export function App() {
         <FeaturesSection />
 
         <HowItWorksSection />
+
+        <PricingSection />
       </main>
     </>
   );
