@@ -1,0 +1,86 @@
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+  position: relative;
+}
+
+.stepLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.stepNumber {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--c-accent);
+  background-color: var(--c-surface);
+  border: 1px solid var(--c-line);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stepContent {
+  padding-bottom: var(--space-8);
+  padding-top: 8px;
+}
+
+.step:last-child .stepContent {
+  padding-bottom: 0;
+}
+
+.stepTitle {
+  color: var(--c-ink);
+  margin-bottom: var(--space-2);
+  font-size: 20px;
+}
+
+.stepDescription {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--c-ink-2);
+}
+
+@media (min-width: 900px) {
+  .step {
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+  }
+
+  .stepLeft {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .connector {
+    width: auto;
+    flex: 1;
+    height: 2px;
+    min-height: unset;
+    margin: 0 var(--space-4);
+    background: repeating-linear-gradient(
+      to right,
+      var(--c-line) 0px,
+      var(--c-line) 6px,
+      transparent 6px,
+      transparent 12px
+    );
+  }
+
+  .stepContent {
+    padding-top: var(--space-6);
+    padding-bottom: 0;
+  }
+}
